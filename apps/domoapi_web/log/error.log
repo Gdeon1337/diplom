@@ -1,0 +1,1057 @@
+2019-07-11 17:10:08.743 [error] <0.895.0> CRASH REPORT Process <0.895.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"expected DomoapiWeb.Plugs.CustomAuthorization.call/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection, got: nil">>},[{'Elixir.DomoapiWeb.Router',custom_check_view_zone,2,[]},{'Elixir.DomoapiWeb.Router','__pipe_through2__',1,[{file,"lib/domoapi_web/router.ex"},{line,1}]},{'Elixir.Phoenix.Router','__call__',1,[{file,"lib/phoenix/router.ex"},{line,270}]},{'Elixir.DomoapiWeb.Endpoint',...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-07-11 17:10:08.797 [error] <0.573.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.893.0>,2,<0.895.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"expected DomoapiWeb.Plugs.CustomAuthorization.call/2 to return a Plug.Conn, all plugs must receive a connection (conn) and return a connection, got: nil">>},[{'Elixir.DomoapiWeb.Router',custom_check_view_zone,2,[]},{'Elixir.DomoapiWeb.Router','__pipe_through2__',1,[{file,"lib/domoapi_web/router.ex"},{line,1}]},{'Elixir.Phoenix.Router',...},...]},...},...]},...}}
+2019-07-12 12:04:34.161 [error] <0.510.0> Failed to start Ranch listener 'Elixir.DomoapiWeb.Endpoint.HTTP' in ranch_tcp:listen([{cacerts,'...'},{key,'...'},{cert,'...'},{port,4000}]) for reason eaddrinuse (address already in use)
+2019-07-12 12:04:34.242 [error] <0.510.0> CRASH REPORT Process <0.510.0> with 0 neighbours exited with reason: {listen_error,'Elixir.DomoapiWeb.Endpoint.HTTP',eaddrinuse} in ranch_acceptors_sup:listen_error/5 line 66
+2019-07-12 12:04:34.243 [error] <0.508.0> Supervisor {<0.508.0>,ranch_listener_sup} had child ranch_acceptors_sup started with ranch_acceptors_sup:start_link('Elixir.DomoapiWeb.Endpoint.HTTP', ranch_tcp) at undefined exit with reason {listen_error,'Elixir.DomoapiWeb.Endpoint.HTTP',eaddrinuse} in context start_error
+2019-07-12 12:07:06.786 [error] <0.619.0> CRASH REPORT Process <0.619.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => verify_pass,message => nil,module => 'Elixir.Bcrypt',reason => nil},[{'Elixir.Bcrypt',verify_pass,[<<"admin">>,<<"$2b$12$McXFzR.CVFnL.CmL2DHVLu/cocZoMaUVRzgIgkiglfng1.oRl1PQa">>],[]},{'Elixir.Domoapi.Users',check_user,2,[{file,"lib/domoapi/users.ex"},{line,142}]},{'Elixir.DomoapiWeb.Plugs.Authorization',call,2,[{file,"lib/domoapi_web/plugs/authorization.ex"},{line,16}]},{'Elixir.DomoapiWeb.Router',...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-07-12 12:07:06.851 [error] <0.345.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.617.0>,2,<0.619.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.UndefinedFunctionError',arity => 2,function => verify_pass,message => nil,module => 'Elixir.Bcrypt',reason => nil},[{'Elixir.Bcrypt',verify_pass,[<<"admin">>,<<"$2b$12$McXFzR.CVFnL.CmL2DHVLu/cocZoMaUVRzgIgkiglfng1.oRl1PQa">>],[]},{'Elixir.Domoapi.Users',check_user,2,[{file,"lib/domoapi/users.ex"},{line,142}]},{'Elixir.DomoapiWeb.Plugs.Authorization',call,2,[{file,...},...]},...]},...},...]},...}}
+2019-07-16 10:02:08.434 [error] <0.551.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-16 10:02:08.472 [error] <0.551.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-16 10:02:08.472 [error] <0.545.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.545.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.551.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-07-16 12:57:43.221 [error] <0.640.0> ** Task <0.640.0> terminating
+** Started from <0.638.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 12:57:43.262 [error] <0.640.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.640.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 12:57:45.791 [error] <0.645.0> ** Task <0.645.0> terminating
+** Started from <0.643.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 12:57:45.792 [error] <0.645.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.645.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 12:57:49.402 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 12:57:49.403 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:01:21.682 [error] <0.615.0> ** Task <0.615.0> terminating
+** Started from <0.613.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:01:21.695 [error] <0.615.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.615.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:01:23.816 [error] <0.618.0> ** Task <0.618.0> terminating
+** Started from <0.616.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:01:23.817 [error] <0.618.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.618.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:01:25.950 [error] <0.621.0> ** Task <0.621.0> terminating
+** Started from <0.619.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:01:25.951 [error] <0.621.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.621.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:02:43.634 [error] <0.615.0> ** Task <0.615.0> terminating
+** Started from <0.613.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:02:43.651 [error] <0.615.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.615.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:02:45.813 [error] <0.618.0> ** Task <0.618.0> terminating
+** Started from <0.616.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:02:45.814 [error] <0.618.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.618.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:02:49.451 [error] <0.623.0> ** Task <0.623.0> terminating
+** Started from <0.621.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:02:49.452 [error] <0.623.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.623.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:03:42.262 [error] <0.640.0> ** Task <0.640.0> terminating
+** Started from <0.638.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:03:42.283 [error] <0.640.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.640.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:03:46.170 [error] <0.645.0> ** Task <0.645.0> terminating
+** Started from <0.643.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:03:46.170 [error] <0.645.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.645.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:03:48.633 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:03:48.633 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:04:36.392 [error] <0.628.0> ** Task <0.628.0> terminating
+** Started from <0.626.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:04:36.411 [error] <0.628.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.628.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:04:38.520 [error] <0.631.0> ** Task <0.631.0> terminating
+** Started from <0.629.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:04:38.521 [error] <0.631.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.631.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:04:42.742 [error] <0.639.0> ** Task <0.639.0> terminating
+** Started from <0.637.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:04:42.743 [error] <0.639.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.639.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:05:21.197 [error] <0.632.0> ** Task <0.632.0> terminating
+** Started from <0.630.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:05:21.209 [error] <0.632.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.632.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:05:23.311 [error] <0.635.0> ** Task <0.635.0> terminating
+** Started from <0.633.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:05:23.311 [error] <0.635.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.635.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:05:25.434 [error] <0.638.0> ** Task <0.638.0> terminating
+** Started from <0.636.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:05:25.435 [error] <0.638.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.638.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:07:57.452 [error] <0.630.0> ** Task <0.630.0> terminating
+** Started from <0.628.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:07:57.466 [error] <0.630.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.630.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:07:59.571 [error] <0.633.0> ** Task <0.633.0> terminating
+** Started from <0.631.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:07:59.572 [error] <0.633.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.633.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:08:03.440 [error] <0.638.0> ** Task <0.638.0> terminating
+** Started from <0.636.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:08:03.440 [error] <0.638.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.638.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:09:31.643 [error] <0.640.0> ** Task <0.640.0> terminating
+** Started from <0.638.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:09:31.659 [error] <0.640.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.640.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:09:35.527 [error] <0.645.0> ** Task <0.645.0> terminating
+** Started from <0.643.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:09:35.529 [error] <0.645.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.645.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:09:37.995 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:09:37.996 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:35:34.058 [error] <0.728.0> ** Task <0.728.0> terminating
+** Started from <0.726.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:35:34.076 [error] <0.728.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.728.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:35:37.991 [error] <0.733.0> ** Task <0.733.0> terminating
+** Started from <0.731.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:35:37.992 [error] <0.733.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.733.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:35:40.178 [error] <0.736.0> ** Task <0.736.0> terminating
+** Started from <0.734.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:35:40.178 [error] <0.736.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.736.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:38:26.553 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:38:26.566 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:38:28.670 [error] <0.661.0> ** Task <0.661.0> terminating
+** Started from <0.659.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:38:28.671 [error] <0.661.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.661.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:38:32.559 [error] <0.666.0> ** Task <0.666.0> terminating
+** Started from <0.664.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:38:32.560 [error] <0.666.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.666.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:41:00.098 [error] <0.715.0> ** Task <0.715.0> terminating
+** Started from <0.713.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:41:00.113 [error] <0.715.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.715.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:41:02.209 [error] <0.718.0> ** Task <0.718.0> terminating
+** Started from <0.716.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:41:02.210 [error] <0.718.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.718.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:41:06.426 [error] <0.723.0> ** Task <0.723.0> terminating
+** Started from <0.721.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:41:06.426 [error] <0.723.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.723.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:42:39.454 [error] <0.715.0> ** Task <0.715.0> terminating
+** Started from <0.713.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:42:39.471 [error] <0.715.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.715.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:42:43.339 [error] <0.720.0> ** Task <0.720.0> terminating
+** Started from <0.718.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:42:43.340 [error] <0.720.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.720.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 13:42:47.599 [error] <0.725.0> ** Task <0.725.0> terminating
+** Started from <0.723.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 13:42:47.602 [error] <0.725.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.725.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:00:00.570 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:00:00.586 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:00:03.088 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:00:03.089 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:00:07.053 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:00:07.055 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:02:33.155 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:02:33.169 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:02:37.034 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:02:37.035 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:02:41.285 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:02:41.286 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:05:16.848 [error] <0.644.0> ** Task <0.644.0> terminating
+** Started from <0.642.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:05:16.866 [error] <0.644.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.644.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:05:20.807 [error] <0.649.0> ** Task <0.649.0> terminating
+** Started from <0.647.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:05:20.808 [error] <0.649.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.649.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:05:24.734 [error] <0.654.0> ** Task <0.654.0> terminating
+** Started from <0.652.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:05:24.734 [error] <0.654.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.654.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:10:36.700 [error] <0.737.0> ** Task <0.737.0> terminating
+** Started from <0.735.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:10:36.718 [error] <0.737.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.737.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:10:39.165 [error] <0.740.0> ** Task <0.740.0> terminating
+** Started from <0.738.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:10:39.169 [error] <0.740.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.740.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:10:41.284 [error] <0.743.0> ** Task <0.743.0> terminating
+** Started from <0.741.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:10:41.284 [error] <0.743.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.743.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:12:03.589 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:12:03.607 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:12:09.576 [error] <0.655.0> ** Task <0.655.0> terminating
+** Started from <0.653.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:12:09.576 [error] <0.655.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.655.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:12:11.693 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:12:11.694 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:14:51.725 [error] <0.662.0> ** Task <0.662.0> terminating
+** Started from <0.660.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:14:51.739 [error] <0.662.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.662.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:14:57.705 [error] <0.669.0> ** Task <0.669.0> terminating
+** Started from <0.667.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:14:57.705 [error] <0.669.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.669.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 14:14:59.815 [error] <0.672.0> ** Task <0.672.0> terminating
+** Started from <0.670.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 14:14:59.816 [error] <0.672.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.672.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:29:14.469 [error] <0.736.0> ** Task <0.736.0> terminating
+** Started from <0.734.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:29:14.494 [error] <0.736.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.736.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:29:16.586 [error] <0.739.0> ** Task <0.739.0> terminating
+** Started from <0.737.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:29:16.586 [error] <0.739.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.739.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:29:20.473 [error] <0.744.0> ** Task <0.744.0> terminating
+** Started from <0.742.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:29:20.474 [error] <0.744.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.744.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:56:54.702 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:56:54.718 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:56:58.589 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:56:58.589 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 15:57:02.457 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 15:57:02.457 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:00:22.200 [error] <0.832.0> ** Task <0.832.0> terminating
+** Started from <0.830.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:00:22.217 [error] <0.832.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.832.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:00:26.076 [error] <0.837.0> ** Task <0.837.0> terminating
+** Started from <0.835.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:00:26.076 [error] <0.837.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.837.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:00:28.540 [error] <0.840.0> ** Task <0.840.0> terminating
+** Started from <0.838.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:00:28.541 [error] <0.840.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.840.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:03:46.632 [error] <0.893.0> ** Task <0.893.0> terminating
+** Started from <0.891.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:03:46.647 [error] <0.893.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.893.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:03:50.500 [error] <0.898.0> ** Task <0.898.0> terminating
+** Started from <0.896.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:03:50.501 [error] <0.898.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.898.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-16 16:03:52.611 [error] <0.901.0> ** Task <0.901.0> terminating
+** Started from <0.899.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-16 16:03:52.612 [error] <0.901.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.901.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-17 22:17:44.281 [error] <0.530.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-17 22:17:44.340 [error] <0.530.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-17 22:17:44.340 [error] <0.524.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.524.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.530.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-07-17 22:18:03.862 [error] <0.740.0> ** Task <0.740.0> terminating
+** Started from <0.738.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-17 22:18:03.882 [error] <0.740.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.740.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-17 22:18:06.021 [error] <0.743.0> ** Task <0.743.0> terminating
+** Started from <0.741.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-17 22:18:06.021 [error] <0.743.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.743.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-17 22:18:08.157 [error] <0.746.0> ** Task <0.746.0> terminating
+** Started from <0.744.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-17 22:18:08.157 [error] <0.746.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.746.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 10:45:48.359 [error] <0.447.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-18 10:45:48.392 [error] <0.447.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-18 10:45:48.393 [error] <0.441.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.441.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.447.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-07-18 10:46:09.023 [error] <0.659.0> ** Task <0.659.0> terminating
+** Started from <0.657.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 10:46:09.030 [error] <0.659.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.659.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 10:46:11.501 [error] <0.662.0> ** Task <0.662.0> terminating
+** Started from <0.660.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 10:46:11.502 [error] <0.662.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.662.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 10:46:15.395 [error] <0.667.0> ** Task <0.667.0> terminating
+** Started from <0.665.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 10:46:15.396 [error] <0.667.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.667.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:08:32.594 [error] <0.732.0> ** Task <0.732.0> terminating
+** Started from <0.730.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:08:32.609 [error] <0.732.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.732.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:08:34.705 [error] <0.735.0> ** Task <0.735.0> terminating
+** Started from <0.733.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:08:34.705 [error] <0.735.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.735.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:08:38.567 [error] <0.740.0> ** Task <0.740.0> terminating
+** Started from <0.738.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:08:38.568 [error] <0.740.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.740.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:11:05.056 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:11:05.070 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:11:10.672 [error] <0.655.0> ** Task <0.655.0> terminating
+** Started from <0.653.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:11:10.672 [error] <0.655.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.655.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:11:13.126 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:11:13.127 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:29:43.204 [error] <0.654.0> ** Task <0.654.0> terminating
+** Started from <0.652.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:29:43.221 [error] <0.654.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.654.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:29:47.071 [error] <0.659.0> ** Task <0.659.0> terminating
+** Started from <0.657.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:29:47.071 [error] <0.659.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.659.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:29:49.175 [error] <0.662.0> ** Task <0.662.0> terminating
+** Started from <0.660.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:29:49.175 [error] <0.662.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.662.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:34:27.504 [error] <0.652.0> ** Task <0.652.0> terminating
+** Started from <0.650.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:34:27.521 [error] <0.652.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.652.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:34:33.120 [error] <0.659.0> ** Task <0.659.0> terminating
+** Started from <0.657.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:34:33.121 [error] <0.659.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.659.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:34:35.577 [error] <0.662.0> ** Task <0.662.0> terminating
+** Started from <0.660.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:34:35.577 [error] <0.662.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.662.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:39:43.884 [error] <0.742.0> ** Task <0.742.0> terminating
+** Started from <0.740.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:39:43.901 [error] <0.742.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.742.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:39:49.503 [error] <0.749.0> ** Task <0.749.0> terminating
+** Started from <0.747.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:39:49.504 [error] <0.749.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.749.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:39:51.961 [error] <0.752.0> ** Task <0.752.0> terminating
+** Started from <0.750.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:39:51.961 [error] <0.752.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.752.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:42:53.432 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:42:53.446 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:42:57.294 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:42:57.294 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:43:01.505 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:43:01.507 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:45:45.690 [error] <0.652.0> ** Task <0.652.0> terminating
+** Started from <0.650.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:45:45.711 [error] <0.652.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.652.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:45:48.220 [error] <0.655.0> ** Task <0.655.0> terminating
+** Started from <0.653.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:45:48.221 [error] <0.655.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.655.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:45:50.411 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:45:50.411 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:49:25.335 [error] <0.648.0> ** Task <0.648.0> terminating
+** Started from <0.646.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:49:25.349 [error] <0.648.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.648.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:49:29.599 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:49:29.599 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 11:49:33.503 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 11:49:33.503 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 12:22:15.407 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 12:22:15.423 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 12:22:19.317 [error] <0.655.0> ** Task <0.655.0> terminating
+** Started from <0.653.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 12:22:19.319 [error] <0.655.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.655.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 12:22:21.806 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 12:22:21.806 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:16:42.602 [error] <0.704.0> ** Task <0.704.0> terminating
+** Started from <0.702.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:16:42.617 [error] <0.704.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.704.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:16:44.713 [error] <0.707.0> ** Task <0.707.0> terminating
+** Started from <0.705.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:16:44.714 [error] <0.707.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.707.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:16:46.831 [error] <0.710.0> ** Task <0.710.0> terminating
+** Started from <0.708.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:16:46.832 [error] <0.710.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.710.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:19:24.170 [error] <0.652.0> ** Task <0.652.0> terminating
+** Started from <0.650.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:19:24.184 [error] <0.652.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.652.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:19:28.440 [error] <0.657.0> ** Task <0.657.0> terminating
+** Started from <0.655.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:19:28.440 [error] <0.657.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.657.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:19:30.566 [error] <0.660.0> ** Task <0.660.0> terminating
+** Started from <0.658.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:19:30.567 [error] <0.660.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.660.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:24:35.964 [error] <0.743.0> ** Task <0.743.0> terminating
+** Started from <0.741.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:24:35.980 [error] <0.743.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.743.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:24:40.350 [error] <0.748.0> ** Task <0.748.0> terminating
+** Started from <0.746.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:24:40.351 [error] <0.748.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.748.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:24:44.304 [error] <0.753.0> ** Task <0.753.0> terminating
+** Started from <0.751.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:24:44.305 [error] <0.753.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.753.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:29:21.531 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:29:21.554 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:29:23.763 [error] <0.653.0> ** Task <0.653.0> terminating
+** Started from <0.651.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:29:23.763 [error] <0.653.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.653.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:29:28.200 [error] <0.658.0> ** Task <0.658.0> terminating
+** Started from <0.656.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:29:28.200 [error] <0.658.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.658.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:33:59.179 [error] <0.636.0> ** Task <0.636.0> terminating
+** Started from <0.634.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:33:59.198 [error] <0.636.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.636.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:34:04.930 [error] <0.643.0> ** Task <0.643.0> terminating
+** Started from <0.641.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:34:04.931 [error] <0.643.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.643.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 13:34:07.444 [error] <0.646.0> ** Task <0.646.0> terminating
+** Started from <0.644.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 13:34:07.444 [error] <0.646.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.646.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:52:58.298 [error] <0.636.0> ** Task <0.636.0> terminating
+** Started from <0.634.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:52:58.311 [error] <0.636.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.636.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:53:02.615 [error] <0.641.0> ** Task <0.641.0> terminating
+** Started from <0.639.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:53:02.616 [error] <0.641.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.641.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:53:06.473 [error] <0.646.0> ** Task <0.646.0> terminating
+** Started from <0.644.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:53:06.475 [error] <0.646.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.646.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:58:15.934 [error] <0.638.0> ** Task <0.638.0> terminating
+** Started from <0.636.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:58:15.947 [error] <0.638.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.638.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:58:18.042 [error] <0.641.0> ** Task <0.641.0> terminating
+** Started from <0.639.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:58:18.043 [error] <0.641.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.641.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 14:58:21.907 [error] <0.646.0> ** Task <0.646.0> terminating
+** Started from <0.644.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 14:58:21.908 [error] <0.646.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.646.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:00:12.516 [error] <0.654.0> ** Task <0.654.0> terminating
+** Started from <0.652.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:00:12.539 [error] <0.654.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.654.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:00:14.678 [error] <0.657.0> ** Task <0.657.0> terminating
+** Started from <0.655.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:00:14.678 [error] <0.657.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.657.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:00:16.856 [error] <0.660.0> ** Task <0.660.0> terminating
+** Started from <0.658.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:00:16.856 [error] <0.660.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.660.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:04:19.339 [error] <0.652.0> ** Task <0.652.0> terminating
+** Started from <0.650.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:04:19.358 [error] <0.652.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.652.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:04:23.696 [error] <0.657.0> ** Task <0.657.0> terminating
+** Started from <0.655.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:04:23.697 [error] <0.657.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.657.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:04:27.617 [error] <0.662.0> ** Task <0.662.0> terminating
+** Started from <0.660.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:04:27.618 [error] <0.662.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.662.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:05:47.234 [error] <0.642.0> ** Task <0.642.0> terminating
+** Started from <0.640.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:05:47.251 [error] <0.642.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.642.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:05:49.346 [error] <0.645.0> ** Task <0.645.0> terminating
+** Started from <0.643.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:05:49.346 [error] <0.645.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.645.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:05:53.217 [error] <0.650.0> ** Task <0.650.0> terminating
+** Started from <0.648.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:05:53.217 [error] <0.650.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.650.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:11:35.164 [error] <0.719.0> ** Task <0.719.0> terminating
+** Started from <0.717.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:11:35.180 [error] <0.719.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.719.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:11:41.157 [error] <0.728.0> ** Task <0.728.0> terminating
+** Started from <0.726.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:11:41.159 [error] <0.728.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.728.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:11:43.269 [error] <0.731.0> ** Task <0.731.0> terminating
+** Started from <0.729.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:11:43.269 [error] <0.731.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.731.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:26:57.906 [error] <0.721.0> ** Task <0.721.0> terminating
+** Started from <0.719.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:26:57.933 [error] <0.721.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.721.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:27:00.078 [error] <0.726.0> ** Task <0.726.0> terminating
+** Started from <0.724.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:27:00.079 [error] <0.726.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.726.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:27:04.076 [error] <0.731.0> ** Task <0.731.0> terminating
+** Started from <0.729.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:27:04.076 [error] <0.731.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.731.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:30:27.961 [error] <0.717.0> ** Task <0.717.0> terminating
+** Started from <0.715.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:30:27.987 [error] <0.717.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.717.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:30:30.430 [error] <0.722.0> ** Task <0.722.0> terminating
+** Started from <0.720.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:30:30.430 [error] <0.722.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.722.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-18 15:30:32.544 [error] <0.725.0> ** Task <0.725.0> terminating
+** Started from <0.723.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.53562175>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-18 15:30:32.545 [error] <0.725.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.725.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-19 15:31:47.815 [error] <0.589.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-19 15:31:47.859 [error] <0.589.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-19 15:31:47.861 [error] <0.583.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.583.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.589.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-07-19 15:31:50.961 [error] <0.916.0> ** Task <0.916.0> terminating
+** Started from <0.914.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-19 15:31:50.986 [error] <0.916.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.916.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-19 15:31:55.479 [error] <0.921.0> ** Task <0.921.0> terminating
+** Started from <0.919.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-19 15:31:55.480 [error] <0.921.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.921.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-19 15:31:57.684 [error] <0.924.0> ** Task <0.924.0> terminating
+** Started from <0.922.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-19 15:31:57.684 [error] <0.924.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.924.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-22 10:29:24.072 [error] <0.470.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-22 10:29:24.116 [error] <0.470.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-07-22 10:29:24.117 [error] <0.464.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.464.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.470.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-07-22 10:29:44.241 [error] <0.825.0> ** Task <0.825.0> terminating
+** Started from <0.823.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-22 10:29:44.272 [error] <0.825.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.825.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-22 10:29:46.496 [error] <0.828.0> ** Task <0.828.0> terminating
+** Started from <0.826.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-22 10:29:46.497 [error] <0.828.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.828.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-07-22 10:29:49.090 [error] <0.831.0> ** Task <0.831.0> terminating
+** Started from <0.829.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.50860529>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-07-22 10:29:49.091 [error] <0.831.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.831.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-08-14 21:09:57.857 [error] <0.4515.0> ** Task <0.4515.0> terminating
+** Started from <0.4513.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.128386347>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-08-14 21:09:57.871 [error] <0.4515.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.4515.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-08-14 21:10:03.464 [error] <0.4522.0> ** Task <0.4522.0> terminating
+** Started from <0.4520.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.128386347>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-08-14 21:10:03.464 [error] <0.4522.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.4522.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-08-14 21:10:05.919 [error] <0.4525.0> ** Task <0.4525.0> terminating
+** Started from <0.4523.0>
+** When function  == #Fun<Elixir.DomoapiWeb.PhotoController.2.128386347>
+**      arguments == []
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_integer,[nil],[]},{'Elixir.DomoapiWeb.PhotoController',publish_message,1,[{file,"lib/domoapi_web/controllers/people/photo_controller.ex"},{line,170}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-08-14 21:10:05.920 [error] <0.4525.0>@Elixir.DomoapiWeb.PhotoController:publish_message:170 CRASH REPORT Process <0.4525.0> with 0 neighbours crashed with reason: bad argument in call to erlang:binary_to_integer(nil) in 'Elixir.DomoapiWeb.PhotoController':publish_message/1 line 170
+2019-11-11 19:39:53.761 [error] <0.821.0> CRASH REPORT Process <0.821.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:40...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-11 19:39:54.134 [error] <0.545.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.816.0>,2,<0.821.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0....">>,...},...}},...},...},...},...},...]},...}}
+2019-11-11 19:39:54.618 [error] <0.831.0> CRASH REPORT Process <0.831.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:40...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-11 19:39:54.626 [error] <0.545.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.817.0>,3,<0.831.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0....">>,...},...}},...},...},...},...},...]},...}}
+2019-11-11 19:49:49.809 [error] <0.651.0> CRASH REPORT Process <0.651.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:40...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-11 19:49:49.888 [error] <0.351.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.647.0>,2,<0.651.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0....">>,...},...}},...},...},...},...},...]},...}}

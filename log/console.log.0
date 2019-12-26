@@ -1,0 +1,973 @@
+2019-09-02 15:50:06.184 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-02 15:50:06.196 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-02 15:50:06.202 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-02 15:50:06.206 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-02 15:50:06.206 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-02 15:50:06.217 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-02 15:50:06.217 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-02 15:50:06.221 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-02 15:50:06.227 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-02 15:50:06.227 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-02 15:50:06.232 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-02 15:50:06.247 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-02 15:50:06.248 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-02 15:50:06.250 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-02 15:50:06.251 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-02 15:50:06.257 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-02 15:50:07.000 [warning] <0.636.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-02 15:50:08.956 [error] <0.958.0> ** Task <0.958.0> terminating
+** Started from 'Elixir.Archive.Supervisor'
+** When function  == fun Elixir.Archive.StartAllCamerasVisor:run/1
+**      arguments == [[]]
+** Reason for termination == 
+** {#{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2405ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>},[{'Elixir.Ecto.Adapters.SQL',raise_sql_call_error,1,[{file,"lib/ecto/adapters/sql.ex"},{line,618}]},{'Elixir.Ecto.Adapters.SQL',execute,5,[{file,"lib/ecto/adapters/sql.ex"},{line,551}]},{'Elixir.Ecto.Repo.Queryable',execute,4,[{file,"lib/ecto/repo/queryable.ex"},{line,153}]},{'Elixir.Ecto.Repo.Queryable',all,3,[{file,"lib/ecto/repo/queryable.ex"},{line,18}]},{'Elixir.Archive.StartAllCamerasVisor',run,1,[{file,"lib/archive/start_all_cameras_visor.ex"},{line,13}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-02 15:50:09.003 [error] <0.958.0> CRASH REPORT Process <0.958.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2405ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618
+2019-09-02 15:50:09.004 [error] <0.825.0> Supervisor 'Elixir.Archive.Supervisor' had child 'Elixir.Archive.StartAllCamerasVisor' started with 'Elixir.Archive.StartAllCamerasVisor':start_link([]) at <0.958.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2405ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618 in context child_terminated
+2019-09-02 15:50:11.405 [error] <0.411.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-09-02 15:50:11.420 [error] <0.411.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-09-02 15:50:11.421 [error] <0.405.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.405.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.411.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-09-02 16:57:43.859 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-02 16:57:43.869 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-02 16:57:43.875 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-02 16:57:43.879 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-02 16:57:43.879 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-02 16:57:43.889 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-02 16:57:43.889 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-02 16:57:43.892 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-02 16:57:43.900 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-02 16:57:43.900 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-02 16:57:43.907 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-02 16:57:43.921 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-02 16:57:43.923 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-02 16:57:43.925 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-02 16:57:43.926 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-02 16:57:43.931 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-02 16:57:44.000 [warning] <0.582.0> lager_error_logger_h dropped 99 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-02 16:57:44.025 [info] <0.43.0> Application swarm started on node nonode@nohost
+2019-09-02 16:57:44.037 [info] <0.43.0> Application quantum started on node nonode@nohost
+2019-09-02 17:17:28.255 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-02 17:17:28.266 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-02 17:17:28.272 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-02 17:17:28.276 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-02 17:17:28.277 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-02 17:17:28.287 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-02 17:17:28.287 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-02 17:17:28.291 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-02 17:17:28.298 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-02 17:17:28.298 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-02 17:17:28.304 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-02 17:17:28.320 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-02 17:17:28.322 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-02 17:17:28.323 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-02 17:17:28.324 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-02 17:17:28.329 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-02 17:17:28.999 [warning] <0.572.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-02 18:17:06.595 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-02 18:17:06.606 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-02 18:17:06.612 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-02 18:17:06.616 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-02 18:17:06.616 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-02 18:17:06.630 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-02 18:17:06.630 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-02 18:17:06.634 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-02 18:17:06.642 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-02 18:17:06.642 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-02 18:17:06.647 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-02 18:17:06.667 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-02 18:17:06.669 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-02 18:17:06.670 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-02 18:17:06.671 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-02 18:17:06.677 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-02 18:17:07.001 [warning] <0.577.0> lager_error_logger_h dropped 244 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-02 18:17:07.027 [info] <0.43.0> Application erlexec started on node nonode@nohost
+2019-09-02 18:17:07.027 [info] <0.43.0> Application exexec started on node nonode@nohost
+2019-09-02 18:17:07.034 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-09-02 18:17:07.040 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-09-02 18:17:07.052 [info] <0.43.0> Application base64url started on node nonode@nohost
+2019-09-02 18:17:07.140 [info] <0.43.0> Application jose started on node nonode@nohost
+2019-09-02 18:17:07.141 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-09-02 18:17:07.161 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-09-05 15:14:50.144 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-05 15:14:50.160 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-05 15:14:50.166 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-05 15:14:50.169 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-05 15:14:50.169 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-05 15:14:50.182 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-05 15:14:50.182 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-05 15:14:50.185 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-05 15:14:50.192 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-05 15:14:50.192 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-05 15:14:50.198 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-05 15:14:50.221 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-05 15:14:50.222 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-05 15:14:50.224 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-05 15:14:50.225 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-05 15:14:50.230 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-05 15:14:51.000 [warning] <0.658.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-05 15:14:52.872 [error] <0.980.0> ** Task <0.980.0> terminating
+** Started from 'Elixir.Archive.Supervisor'
+** When function  == fun Elixir.Archive.StartAllCamerasVisor:run/1
+**      arguments == [[]]
+** Reason for termination == 
+** {#{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2374ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>},[{'Elixir.Ecto.Adapters.SQL',raise_sql_call_error,1,[{file,"lib/ecto/adapters/sql.ex"},{line,618}]},{'Elixir.Ecto.Adapters.SQL',execute,5,[{file,"lib/ecto/adapters/sql.ex"},{line,551}]},{'Elixir.Ecto.Repo.Queryable',execute,4,[{file,"lib/ecto/repo/queryable.ex"},{line,153}]},{'Elixir.Ecto.Repo.Queryable',all,3,[{file,"lib/ecto/repo/queryable.ex"},{line,18}]},{'Elixir.Archive.StartAllCamerasVisor',run,1,[{file,"lib/archive/start_all_cameras_visor.ex"},{line,13}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-05 15:14:52.908 [error] <0.980.0> CRASH REPORT Process <0.980.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2374ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618
+2019-09-05 15:14:52.909 [error] <0.847.0> Supervisor 'Elixir.Archive.Supervisor' had child 'Elixir.Archive.StartAllCamerasVisor' started with 'Elixir.Archive.StartAllCamerasVisor':start_link([]) at <0.980.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2374ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618 in context child_terminated
+2019-09-05 15:19:21.101 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-05 15:19:21.114 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-05 15:19:21.120 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-05 15:19:21.123 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-05 15:19:21.124 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-05 15:19:21.134 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-05 15:19:21.134 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-05 15:19:21.138 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-05 15:19:21.144 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-05 15:19:21.144 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-05 15:19:21.148 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-05 15:19:21.164 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-05 15:19:21.166 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-05 15:19:21.167 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-05 15:19:21.168 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-05 15:19:21.173 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-05 15:19:22.000 [warning] <0.662.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-06 11:09:19.976 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-06 11:09:19.987 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-06 11:09:19.993 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-06 11:09:19.996 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-06 11:09:19.996 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-06 11:09:20.009 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-06 11:09:20.009 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-06 11:09:20.012 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-06 11:09:20.019 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-06 11:09:20.019 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-06 11:09:20.024 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-06 11:09:20.040 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-06 11:09:20.041 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-06 11:09:20.043 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-06 11:09:20.044 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-06 11:09:20.049 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-06 11:09:21.000 [warning] <0.605.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-06 11:09:22.709 [error] <0.927.0> ** Task <0.927.0> terminating
+** Started from 'Elixir.Archive.Supervisor'
+** When function  == fun Elixir.Archive.StartAllCamerasVisor:run/1
+**      arguments == [[]]
+** Reason for termination == 
+** {#{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2415ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>},[{'Elixir.Ecto.Adapters.SQL',raise_sql_call_error,1,[{file,"lib/ecto/adapters/sql.ex"},{line,618}]},{'Elixir.Ecto.Adapters.SQL',execute,5,[{file,"lib/ecto/adapters/sql.ex"},{line,551}]},{'Elixir.Ecto.Repo.Queryable',execute,4,[{file,"lib/ecto/repo/queryable.ex"},{line,153}]},{'Elixir.Ecto.Repo.Queryable',all,3,[{file,"lib/ecto/repo/queryable.ex"},{line,18}]},{'Elixir.Archive.StartAllCamerasVisor',run,1,[{file,"lib/archive/start_all_cameras_visor.ex"},{line,13}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-09-06 11:09:22.798 [error] <0.927.0> CRASH REPORT Process <0.927.0> with 0 neighbours crashed with reason: #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2415ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618
+2019-09-06 11:09:22.800 [error] <0.794.0> Supervisor 'Elixir.Archive.Supervisor' had child 'Elixir.Archive.StartAllCamerasVisor' started with 'Elixir.Archive.StartAllCamerasVisor':start_link([]) at <0.927.0> exit with reason #{'__exception__' => true,'__struct__' => 'Elixir.DBConnection.ConnectionError',message => <<"connection not available and request was dropped from queue after 2415ms. You can configure how long requests wait in the queue using :queue_target and :queue_interval. See DBConnection.start_link/2 for more information">>} in 'Elixir.Ecto.Adapters.SQL':raise_sql_call_error/1 line 618 in context child_terminated
+2019-09-06 11:09:25.309 [error] <0.380.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 gen_server tzdata_release_updater terminated with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-09-06 11:09:25.317 [error] <0.380.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 CRASH REPORT Process tzdata_release_updater with 0 neighbours crashed with reason: no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73
+2019-09-06 11:09:25.318 [error] <0.374.0>@Elixir.Tzdata.Util:first_matching_weekday_in_month:73 Supervisor {<0.374.0>,'Elixir.Supervisor.Default'} had child 'Elixir.Tzdata.ReleaseUpdater' started with 'Elixir.Tzdata.ReleaseUpdater':start_link() at <0.380.0> exit with reason no function clause matching 'Elixir.Tzdata.Util':first_matching_weekday_in_month(1932, 4, 7, []) line 73 in context child_terminated
+2019-09-12 14:40:56.275 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-12 14:40:56.286 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-12 14:40:56.292 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-12 14:40:56.296 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-12 14:40:56.296 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-12 14:40:56.308 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-12 14:40:56.308 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-12 14:40:56.312 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-12 14:40:56.319 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-12 14:40:56.319 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-12 14:40:56.324 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-12 14:40:56.349 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-12 14:40:56.350 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-12 14:40:56.352 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-12 14:40:56.353 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-12 14:40:56.357 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-12 14:40:57.000 [warning] <0.605.0> lager_error_logger_h dropped 376 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-12 14:41:28.433 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-12 14:41:28.445 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-12 14:41:28.451 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-12 14:41:28.454 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-12 14:41:28.455 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-12 14:41:28.467 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-12 14:41:28.468 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-12 14:41:28.471 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-12 14:41:28.477 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-12 14:41:28.478 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-12 14:41:28.486 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-12 14:41:28.508 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-12 14:41:28.510 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-12 14:41:28.512 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-12 14:41:28.513 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-12 14:41:28.522 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-12 14:41:29.000 [warning] <0.606.0> lager_error_logger_h dropped 250 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-12 14:41:29.007 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-09-12 14:41:29.022 [info] <0.43.0> Application base64url started on node nonode@nohost
+2019-09-12 14:41:29.129 [info] <0.43.0> Application jose started on node nonode@nohost
+2019-09-12 14:41:29.129 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-09-12 14:41:29.146 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-09-12 14:41:30.001 [warning] <0.606.0> lager_error_logger_h dropped 79 messages in the last second that exceeded the limit of 50 messages/sec
+2019-09-12 14:41:41.065 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-09-12 14:41:41.075 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-09-12 14:41:41.081 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-09-12 14:41:41.085 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-09-12 14:41:41.085 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-09-12 14:41:41.095 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-09-12 14:41:41.095 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-09-12 14:41:41.099 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-09-12 14:41:41.106 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-09-12 14:41:41.106 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-09-12 14:41:41.111 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-09-12 14:41:41.125 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-09-12 14:41:41.129 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-09-12 14:41:41.131 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-09-12 14:41:41.132 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-09-12 14:41:41.136 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-09-12 14:41:42.000 [warning] <0.571.0> lager_error_logger_h dropped 378 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-16 18:17:58.460 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-10-16 18:17:58.469 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-10-16 18:17:58.477 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-10-16 18:17:58.483 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-10-16 18:17:58.483 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-10-16 18:17:58.583 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-10-16 18:17:58.584 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-10-16 18:17:58.615 [info] <0.43.0> Application httpoison started on node nonode@nohost
+2019-10-16 18:17:58.636 [info] <0.43.0> Application comeonin started on node nonode@nohost
+2019-10-16 18:17:58.636 [info] <0.43.0> Application bcrypt_elixir started on node nonode@nohost
+2019-10-16 18:17:58.641 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-10-16 18:17:58.661 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-10-16 18:17:58.663 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-10-16 18:17:58.664 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-10-16 18:17:58.665 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-10-16 18:17:58.671 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-10-16 18:17:59.000 [warning] <0.669.0> lager_error_logger_h dropped 230 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-16 18:17:59.037 [info] <0.43.0> Application archive started on node nonode@nohost
+2019-10-16 18:17:59.058 [info] <0.43.0> Application ex_json_schema started on node nonode@nohost
+2019-10-16 18:17:59.084 [info] <0.43.0> Application hpack started on node nonode@nohost
+2019-10-16 18:17:59.093 [info] <0.43.0> Application kadabra started on node nonode@nohost
+2019-10-16 18:17:59.199 [info] <0.43.0> Application erlexec started on node nonode@nohost
+2019-10-16 18:17:59.199 [info] <0.43.0> Application exexec started on node nonode@nohost
+2019-10-16 18:17:59.206 [error] <0.1008.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1008.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-10-16 18:17:59.206 [error] <0.1009.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1009.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-10-16 18:17:59.212 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-10-16 18:17:59.221 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-10-16 18:17:59.232 [info] <0.43.0> Application base64url started on node nonode@nohost
+2019-10-16 18:17:59.322 [info] <0.43.0> Application jose started on node nonode@nohost
+2019-10-16 18:17:59.322 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-10-16 18:17:59.340 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-10-16 18:18:00.000 [warning] <0.669.0> lager_error_logger_h dropped 99 messages in the last second that exceeded the limit of 50 messages/sec
+2019-10-16 18:18:11.013 [error] <0.1153.0> CRASH REPORT Process <0.1153.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-10-16 18:18:11.179 [error] <0.671.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.1151.0>,1,<0.1153.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encodin...">> => ...,...},...}},...},...},...},...},...]},...}}
+2019-10-16 18:18:11.488 [error] <0.1156.0> CRASH REPORT Process <0.1156.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:4000">>,<<"origin">> => <<"http://loca...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-10-16 18:18:11.497 [error] <0.671.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.1151.0>,2,<0.1156.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"...">>,...},...}},...},...},...},...},...]},...}}
+2019-10-16 18:18:11.666 [error] <0.1159.0> CRASH REPORT Process <0.1159.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7">>,<<"connection">> => <<"keep-alive">>,<<"host">> => <<"localhost:40...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-10-16 18:18:11.678 [error] <0.671.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.1151.0>,3,<0.1159.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"image/webp,image/apng,image/*,*/*;q=0.8">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=...">>,...},...}},...},...},...},...},...]},...}}
+2019-11-18 15:03:39.783 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:03:39.795 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:03:39.802 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:03:39.813 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:03:39.818 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:03:39.818 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:03:39.831 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:03:39.831 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:03:39.837 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:03:39.844 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:03:39.847 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:03:39.854 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:03:39.868 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:03:39.870 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:03:39.871 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:03:39.872 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:03:39.876 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:03:40.001 [warning] <0.2052.0> lager_error_logger_h dropped 471 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:03:40.030 [info] <0.43.0> Application swarm started on node nonode@nohost
+2019-11-18 15:03:40.040 [info] <0.43.0> Application quantum started on node nonode@nohost
+2019-11-18 15:03:41.000 [warning] <0.2052.0> lager_error_logger_h dropped 221 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:05:03.053 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:05:03.063 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:05:03.070 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:05:03.080 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:05:03.084 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:05:03.085 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:05:03.095 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:05:03.095 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:05:03.102 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:05:03.107 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:05:03.109 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:05:03.116 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:05:03.130 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:05:03.131 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:05:03.132 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:05:03.133 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:05:03.136 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:05:04.001 [warning] <0.445.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:10:21.835 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:10:21.846 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:10:21.852 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:10:21.862 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:10:21.866 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:10:21.866 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:10:21.876 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:10:21.877 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:10:21.884 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:10:21.890 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:10:21.894 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:10:21.901 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:10:21.916 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:10:21.917 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:10:21.919 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:10:21.920 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:10:21.923 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:10:22.000 [warning] <0.445.0> lager_error_logger_h dropped 95 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:10:22.022 [info] <0.43.0> Application domoapi_user started on node nonode@nohost
+2019-11-18 15:10:23.000 [warning] <0.445.0> lager_error_logger_h dropped 598 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:11:01.561 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:11:01.571 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:11:01.577 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:11:01.588 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:11:01.592 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:11:01.592 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:11:01.602 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:11:01.603 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:11:01.610 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:11:01.615 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:11:01.618 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:11:01.624 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:11:01.637 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:11:01.639 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:11:01.641 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:11:01.642 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:11:01.645 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:11:02.002 [warning] <0.445.0> lager_error_logger_h dropped 618 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:11:02.007 [error] <0.1176.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1176.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 15:11:02.013 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 15:11:03.000 [warning] <0.445.0> lager_error_logger_h dropped 75 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:30:24.563 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:30:24.575 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:30:24.582 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:30:24.591 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:30:24.595 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:30:24.595 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:30:24.607 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:30:24.607 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:30:24.614 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:30:24.619 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:30:24.622 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:30:24.628 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:30:24.641 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:30:24.642 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:30:24.644 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:30:24.645 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:30:24.648 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:30:25.000 [warning] <0.445.0> lager_error_logger_h dropped 618 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:30:25.013 [error] <0.1176.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1176.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 15:30:25.018 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 15:30:25.999 [warning] <0.445.0> lager_error_logger_h dropped 75 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:32:08.818 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:32:08.828 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:32:08.834 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:32:08.843 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:32:08.847 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:32:08.848 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:32:08.858 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:32:08.858 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:32:08.864 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:32:08.870 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:32:08.872 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:32:08.879 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:32:08.894 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:32:08.896 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:32:08.897 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:32:08.899 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:32:08.901 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:32:08.999 [warning] <0.445.0> lager_error_logger_h dropped 226 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:44:44.575 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 15:44:44.586 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 15:44:44.592 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 15:44:44.603 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 15:44:44.607 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 15:44:44.607 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 15:44:44.618 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 15:44:44.619 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 15:44:44.625 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 15:44:44.631 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 15:44:44.633 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 15:44:44.641 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 15:44:44.656 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 15:44:44.658 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 15:44:44.659 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 15:44:44.661 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 15:44:44.664 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 15:44:45.000 [warning] <0.445.0> lager_error_logger_h dropped 618 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 15:44:45.038 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 16:04:54.190 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:04:54.200 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:04:54.206 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:04:54.216 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:04:54.220 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:04:54.220 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:04:54.231 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:04:54.231 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:04:54.238 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:04:54.244 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:04:54.247 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:04:54.255 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:04:54.269 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:04:54.271 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:04:54.272 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:04:54.273 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:04:54.276 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:04:55.000 [warning] <0.527.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:09:53.931 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:09:53.942 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:09:53.949 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:09:53.962 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:09:53.966 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:09:53.966 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:09:53.977 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:09:53.977 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:09:53.984 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:09:53.989 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:09:53.992 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:09:53.999 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:09:54.014 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:09:54.016 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:09:54.017 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:09:54.019 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:09:54.021 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:09:55.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:11:01.901 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:11:01.911 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:11:01.917 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:11:01.928 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:11:01.932 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:11:01.932 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:11:01.943 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:11:01.943 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:11:01.951 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:11:01.956 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:11:01.959 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:11:01.966 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:11:01.981 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:11:01.983 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:11:01.984 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:11:01.986 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:11:01.988 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:11:03.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:13:45.373 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:13:45.383 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:13:45.390 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:13:45.400 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:13:45.404 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:13:45.405 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:13:45.417 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:13:45.417 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:13:45.425 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:13:45.431 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:13:45.433 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:13:45.440 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:13:45.453 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:13:45.455 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:13:45.456 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:13:45.457 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:13:45.460 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:13:46.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:16:10.807 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:16:10.817 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:16:10.823 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:16:10.833 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:16:10.837 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:16:10.837 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:16:10.848 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:16:10.848 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:16:10.855 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:16:10.860 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:16:10.863 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:16:10.870 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:16:10.883 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:16:10.885 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:16:10.886 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:16:10.887 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:16:10.890 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:16:11.000 [warning] <0.453.0> lager_error_logger_h dropped 463 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:16:11.010 [info] <0.43.0> Application erlexec started on node nonode@nohost
+2019-11-18 16:16:11.010 [info] <0.43.0> Application exexec started on node nonode@nohost
+2019-11-18 16:16:11.019 [info] <0.43.0> Application gen_stage started on node nonode@nohost
+2019-11-18 16:16:11.022 [info] <0.43.0> Application crontab started on node nonode@nohost
+2019-11-18 16:16:11.032 [info] <0.43.0> Application gen_state_machine started on node nonode@nohost
+2019-11-18 16:16:11.039 [info] <0.43.0> Application libring started on node nonode@nohost
+2019-11-18 16:16:11.068 [info] <0.43.0> Application swarm started on node nonode@nohost
+2019-11-18 16:16:11.078 [info] <0.43.0> Application quantum started on node nonode@nohost
+2019-11-18 16:16:12.000 [warning] <0.453.0> lager_error_logger_h dropped 229 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:18:57.118 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:18:57.128 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:18:57.135 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:18:57.146 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:18:57.150 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:18:57.150 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:18:57.162 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:18:57.162 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:18:57.169 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:18:57.175 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:18:57.177 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:18:57.184 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:18:57.199 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:18:57.200 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:18:57.202 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:18:57.203 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:18:57.206 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:18:58.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:20:33.900 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:20:33.912 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:20:33.918 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:20:33.929 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:20:33.933 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:20:33.933 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:20:33.944 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:20:33.944 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:20:33.951 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:20:33.956 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:20:33.960 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:20:33.967 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:20:33.981 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:20:33.983 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:20:33.984 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:20:33.986 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:20:33.989 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:20:34.999 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:22:02.498 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:22:02.510 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:22:02.517 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:22:02.529 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:22:02.533 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:22:02.533 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:22:02.544 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:22:02.544 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:22:02.551 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:22:02.558 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:22:02.560 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:22:02.567 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:22:02.584 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:22:02.586 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:22:02.587 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:22:02.588 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:22:02.591 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:22:02.999 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:24:42.258 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:24:42.268 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:24:42.276 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:24:42.288 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:24:42.292 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:24:42.292 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:24:42.305 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:24:42.305 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:24:42.313 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:24:42.320 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:24:42.323 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:24:42.333 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:24:42.348 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:24:42.350 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:24:42.351 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:24:42.353 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:24:42.356 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:24:43.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:26:46.271 [error] <0.1397.0> CRASH REPORT Process <0.1397.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 199,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"g...">>,...},...}},...},...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:26:46.283 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1396.0>,1,<0.1397.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 199,cert => undefined,has_body => true,has_read_body => true,...}},...},...],...},...]},...},...]},...}}
+2019-11-18 16:26:46.357 [error] <0.1401.0> CRASH REPORT Process <0.1401.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 231,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"g...">>,...},...}},...},...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:26:46.371 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1400.0>,1,<0.1401.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 231,cert => undefined,has_body => true,has_read_body => true,...}},...},...],...},...]},...},...]},...}}
+2019-11-18 16:26:46.405 [error] <0.1405.0> CRASH REPORT Process <0.1405.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 14,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"gz...">>,...},...}},...},...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:26:46.414 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1404.0>,1,<0.1405.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 14,cert => undefined,has_body => true,has_read_body => true,...}},...},...],...},...]},...},...]},...}}
+2019-11-18 16:26:46.469 [error] <0.1409.0> CRASH REPORT Process <0.1409.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 230,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"g...">>,...},...}},...},...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:26:46.479 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1408.0>,1,<0.1409.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => call,kind => nil,module => 'Elixir.DomoapiUserWeb.FallbackController'},[{'Elixir.DomoapiUserWeb.FallbackController',call,[#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 230,cert => undefined,has_body => true,has_read_body => true,...}},...},...],...},...]},...},...]},...}}
+2019-11-18 16:27:50.311 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:27:50.322 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:27:50.329 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:27:50.341 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:27:50.344 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:27:50.345 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:27:50.355 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:27:50.355 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:27:50.363 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:27:50.369 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:27:50.371 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:27:50.378 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:27:50.391 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:27:50.393 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:27:50.395 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:27:50.396 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:27:50.399 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:27:51.001 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:35:39.059 [error] <0.1424.0> CRASH REPORT Process <0.1424.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:35:39.096 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1423.0>,1,<0.1424.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-enc...">> => ...,...},...}},...},...},...},...},...]},...}}
+2019-11-18 16:36:32.338 [error] <0.1460.0> CRASH REPORT Process <0.1460.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:36:32.344 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiUserWeb.Endpoint.HTTP',<0.1459.0>,1,<0.1460.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-enc...">> => ...,...},...}},...},...},...},...},...]},...}}
+2019-11-18 16:36:38.835 [error] <0.1467.0> CRASH REPORT Process <0.1467.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encoding">> => <<"gzip, deflate, br">>,<<"accept-language">> => <<"ru-RU,ru;q=0.9,en-US;q=0.8...">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 16:36:38.841 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.1466.0>,1,<0.1467.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3">>,<<"accept-encodin...">> => ...,...},...}},...},...},...},...},...]},...}}
+2019-11-18 16:45:39.916 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:45:39.928 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:45:39.935 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:45:39.945 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:45:39.950 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:45:39.950 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:45:39.961 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:45:39.961 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:45:39.967 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:45:39.973 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:45:39.975 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:45:39.983 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:45:39.997 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:45:39.999 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:45:40.000 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:45:40.001 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:45:40.004 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:45:41.000 [warning] <0.453.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 16:52:04.396 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 16:52:04.406 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 16:52:04.413 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 16:52:04.425 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 16:52:04.429 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 16:52:04.429 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 16:52:04.440 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 16:52:04.440 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 16:52:04.448 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 16:52:04.454 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 16:52:04.457 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 16:52:04.464 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 16:52:04.480 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 16:52:04.481 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 16:52:04.483 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 16:52:04.484 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 16:52:04.487 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 16:52:05.000 [warning] <0.458.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 17:47:52.407 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 17:47:52.419 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 17:47:52.427 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 17:47:52.438 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 17:47:52.442 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 17:47:52.442 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 17:47:52.453 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 17:47:52.453 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 17:47:52.462 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 17:47:52.467 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 17:47:52.471 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 17:47:52.478 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 17:47:52.492 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 17:47:52.494 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 17:47:52.495 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 17:47:52.496 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 17:47:52.499 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 17:47:53.000 [warning] <0.445.0> lager_error_logger_h dropped 741 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 18:16:59.511 [error] <0.1891.0> CRASH REPORT Process <0.1891.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept-encoding">> => <<"gzip">>,<<"connection">> => <<"upgrade">>,<<"host">> => <<"3.123.78.125">>,<<"user-agent">> => <<"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 21:38:30.576 [error] <0.5087.0> CRASH REPORT Process <0.5087.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip">>,<<"connection">> => <<"upgrade">>,<<"host">> => <<"3.123.78.125">>,<<"user-agent">> => <<"kubectl/v1.12.0 (linux/amd64) kubernetes/0ed3388">>,<<"x-forwarded-for">> => <<"169.197.108....">>,...},...}},...},...},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 21:38:30.615 [error] <0.447.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.DomoapiWeb.Endpoint.HTTP',<0.5086.0>,1,<0.5087.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.Router.NoRouteError',conn => #{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 0,cert => undefined,has_body => false,headers => #{<<"accept">> => <<"*/*">>,<<"accept-encoding">> => <<"gzip">>,<<"connection">> => <<"upgrade">>,<<"host">> => <<"3.123.78.125">>,<<"user-agent">> => <<"kubectl/v1...">>,...},...}},...},...},...},...},...]},...}}
+2019-11-18 22:24:45.232 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:24:45.243 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:24:45.250 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:24:45.261 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:24:45.265 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:24:45.265 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:24:45.277 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:24:45.277 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:24:45.284 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:24:45.290 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:24:45.293 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:24:45.300 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:24:45.314 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:24:45.315 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:24:45.317 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:24:45.318 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:24:45.321 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:24:46.000 [warning] <0.453.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:40:12.968 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:40:12.980 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:40:12.986 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:40:12.997 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:40:13.000 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:40:13.001 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:40:13.013 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:40:13.013 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:40:13.020 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:40:13.027 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:40:13.029 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:40:13.038 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:40:13.051 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:40:13.052 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:40:13.053 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:40:13.055 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:40:13.057 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:40:14.001 [warning] <0.457.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:42:01.944 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:42:01.955 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:42:01.961 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:42:01.971 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:42:01.975 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:42:01.975 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:42:01.985 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:42:01.986 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:42:01.994 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:42:01.999 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:42:02.002 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:42:02.010 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:42:02.021 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:42:02.023 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:42:02.024 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:42:02.025 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:42:02.028 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:42:03.000 [warning] <0.455.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:44:54.681 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:44:54.692 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:44:54.700 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:44:54.711 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:44:54.715 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:44:54.715 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:44:54.726 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:44:54.726 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:44:54.733 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:44:54.738 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:44:54.741 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:44:54.747 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:44:54.759 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:44:54.760 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:44:54.762 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:44:54.763 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:44:54.766 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:44:55.000 [warning] <0.455.0> lager_error_logger_h dropped 602 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:44:55.005 [info] <0.43.0> Application archive started on node nonode@nohost
+2019-11-18 22:44:55.019 [info] <0.43.0> Application ex_json_schema started on node nonode@nohost
+2019-11-18 22:44:55.038 [info] <0.43.0> Application hpack started on node nonode@nohost
+2019-11-18 22:44:55.045 [info] <0.43.0> Application kadabra started on node nonode@nohost
+2019-11-18 22:44:55.053 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-11-18 22:44:55.067 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-11-18 22:44:55.071 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-11-18 22:44:55.096 [error] <0.1186.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1186.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 22:44:55.107 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 22:44:56.000 [warning] <0.455.0> lager_error_logger_h dropped 91 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:48:20.484 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:48:20.495 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:48:20.501 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:48:20.511 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:48:20.515 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:48:20.515 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:48:20.526 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:48:20.527 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:48:20.533 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:48:20.538 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:48:20.540 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:48:20.548 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:48:20.561 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:48:20.562 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:48:20.564 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:48:20.565 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:48:20.568 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:48:21.000 [warning] <0.459.0> lager_error_logger_h dropped 610 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:48:21.016 [info] <0.43.0> Application hpack started on node nonode@nohost
+2019-11-18 22:48:21.026 [info] <0.43.0> Application kadabra started on node nonode@nohost
+2019-11-18 22:48:21.038 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-11-18 22:48:21.059 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-11-18 22:48:21.063 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-11-18 22:48:21.086 [error] <0.1207.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1207.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 22:48:21.102 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 22:48:21.999 [warning] <0.459.0> lager_error_logger_h dropped 83 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:50:00.265 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:50:00.272 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:50:00.280 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:50:00.290 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:50:00.295 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:50:00.295 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:50:00.306 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:50:00.306 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:50:00.313 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:50:00.318 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:50:00.321 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:50:00.327 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:50:00.339 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:50:00.340 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:50:00.341 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:50:00.342 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:50:00.345 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:50:00.999 [warning] <0.458.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 22:50:52.473 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 22:50:52.484 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 22:50:52.491 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 22:50:52.503 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 22:50:52.507 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 22:50:52.507 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 22:50:52.518 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 22:50:52.518 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 22:50:52.525 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 22:50:52.531 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 22:50:52.533 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 22:50:52.541 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 22:50:52.555 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 22:50:52.557 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 22:50:52.558 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 22:50:52.560 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 22:50:52.563 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 22:50:53.000 [warning] <0.473.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:03:56.065 [error] <0.1661.0> CRASH REPORT Process <0.1661.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.BadFunctionError',term => #{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.ActionClauseError',args => [#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 15,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"gzip">>,<<"connection">> => <<"upgrade">>,<<"content-length">> => <<"15">>,<<"...">> => ...,...},...}},...},...],...}},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:03:56.092 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1660.0>,1,<0.1661.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.BadFunctionError',term => #{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.ActionClauseError',args => [#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 15,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<...>>,...},...}},...},...],...}},...},...},...]},...}}
+2019-11-18 23:15:05.339 [error] <0.1837.0> CRASH REPORT Process <0.1837.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:15:05.348 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1836.0>,1,<0.1837.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:15:05.901 [error] <0.1841.0> CRASH REPORT Process <0.1841.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:15:05.909 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1840.0>,1,<0.1841.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:15:06.461 [error] <0.1845.0> CRASH REPORT Process <0.1845.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:15:06.470 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1844.0>,1,<0.1845.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:16:09.725 [error] <0.1898.0> CRASH REPORT Process <0.1898.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:16:09.734 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1897.0>,1,<0.1898.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:16:10.273 [error] <0.1902.0> CRASH REPORT Process <0.1902.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:16:10.282 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1901.0>,1,<0.1902.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:16:10.875 [error] <0.1906.0> CRASH REPORT Process <0.1906.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:16:10.884 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1905.0>,1,<0.1906.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:17:01.635 [error] <0.1959.0> CRASH REPORT Process <0.1959.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:17:01.643 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1958.0>,1,<0.1959.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:17:42.328 [error] <0.1995.0> CRASH REPORT Process <0.1995.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.BadFunctionError',term => #{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.ActionClauseError',args => [#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 15,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<"gzip">>,<<"connection">> => <<"upgrade">>,<<"content-length">> => <<"15">>,<<"...">> => ...,...},...}},...},...],...}},...},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:17:42.336 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1994.0>,1,<0.1995.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.BadFunctionError',term => #{'__exception__' => true,'__struct__' => 'Elixir.Phoenix.ActionClauseError',args => [#{'__struct__' => 'Elixir.Plug.Conn',adapter => {'Elixir.Plug.Cowboy.Conn',#{bindings => #{},body_length => 15,cert => undefined,has_body => true,has_read_body => true,headers => #{<<"accept-charset">> => <<"UTF-8">>,<<"accept-encoding">> => <<...>>,...},...}},...},...],...}},...},...},...]},...}}
+2019-11-18 23:18:17.743 [error] <0.2042.0> CRASH REPORT Process <0.2042.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:18:17.751 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.2041.0>,1,<0.2042.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:22:31.002 [error] <0.2113.0> CRASH REPORT Process <0.2113.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:22:31.592 [error] <0.2116.0> CRASH REPORT Process <0.2116.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:22:31.601 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.2115.0>,1,<0.2116.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:22:32.256 [error] <0.2120.0> CRASH REPORT Process <0.2120.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:22:32.265 [error] <0.475.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.2119.0>,1,<0.2120.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:33:39.611 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 23:33:39.622 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 23:33:39.629 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 23:33:39.640 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 23:33:39.645 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 23:33:39.645 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 23:33:39.655 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 23:33:39.655 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 23:33:39.663 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 23:33:39.670 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 23:33:39.673 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 23:33:39.680 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 23:33:39.693 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 23:33:39.694 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 23:33:39.696 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 23:33:39.697 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 23:33:39.700 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 23:33:40.001 [warning] <0.458.0> lager_error_logger_h dropped 611 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:33:40.002 [info] <0.43.0> Application kadabra started on node nonode@nohost
+2019-11-18 23:33:40.010 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-11-18 23:33:40.026 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-11-18 23:33:40.032 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-11-18 23:33:40.056 [error] <0.1188.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1188.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 23:33:40.065 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 23:33:41.001 [warning] <0.458.0> lager_error_logger_h dropped 81 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:34:07.745 [error] <0.1363.0> CRASH REPORT Process <0.1363.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:34:07.776 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1362.0>,1,<0.1363.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:34:08.324 [error] <0.1367.0> CRASH REPORT Process <0.1367.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:34:08.332 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1366.0>,1,<0.1367.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:34:08.931 [error] <0.1371.0> CRASH REPORT Process <0.1371.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:34:08.938 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1370.0>,1,<0.1371.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:35:45.402 [error] <0.1423.0> CRASH REPORT Process <0.1423.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:35:45.411 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1422.0>,1,<0.1423.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:35:45.979 [error] <0.1427.0> CRASH REPORT Process <0.1427.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:35:45.986 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1426.0>,1,<0.1427.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:35:46.560 [error] <0.1431.0> CRASH REPORT Process <0.1431.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:35:46.569 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1430.0>,1,<0.1431.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:40:43.526 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 23:40:43.535 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 23:40:43.542 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 23:40:43.553 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 23:40:43.558 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 23:40:43.558 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 23:40:43.568 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 23:40:43.569 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 23:40:43.576 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 23:40:43.581 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 23:40:43.584 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 23:40:43.591 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 23:40:43.604 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 23:40:43.606 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 23:40:43.608 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 23:40:43.609 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 23:40:43.611 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 23:40:43.662 [error] <0.520.0> Failed to start Ranch listener 'Elixir.DomoapiUserWeb.Endpoint.HTTP' in ranch_tcp:listen([{cacerts,'...'},{key,'...'},{cert,'...'},{port,9080}]) for reason eaddrinuse (address already in use)
+2019-11-18 23:40:43.687 [error] <0.518.0> Supervisor {<0.518.0>,ranch_listener_sup} had child ranch_acceptors_sup started with ranch_acceptors_sup:start_link('Elixir.DomoapiUserWeb.Endpoint.HTTP', ranch_tcp) at undefined exit with reason {listen_error,'Elixir.DomoapiUserWeb.Endpoint.HTTP',eaddrinuse} in context start_error
+2019-11-18 23:40:43.687 [error] <0.520.0> CRASH REPORT Process <0.520.0> with 0 neighbours exited with reason: {listen_error,'Elixir.DomoapiUserWeb.Endpoint.HTTP',eaddrinuse} in ranch_acceptors_sup:listen_error/5 line 66
+2019-11-18 23:40:43.687 [error] <0.499.0> Supervisor 'Elixir.DomoapiUserWeb.Endpoint' had child {ranch_listener_sup,'Elixir.DomoapiUserWeb.Endpoint.HTTP'} started with 'Elixir.Phoenix.Endpoint.Cowboy2Adapter':start_link(http, 'Elixir.DomoapiUserWeb.Endpoint', {ranch_listener_sup,start_link,['Elixir.DomoapiUserWeb.Endpoint.HTTP',ranch_tcp,#{max_connections => ...,...},...]}) at undefined exit with reason {shutdown,{failed_to_start_child,ranch_acceptors_sup,{listen_error,'Elixir.DomoapiUserWeb.Endpoint.HTTP',eaddrinuse}}} in context start_error
+2019-11-18 23:40:43.687 [error] <0.498.0> Supervisor 'Elixir.DomoapiUser.Supervisor' had child 'Elixir.DomoapiUserWeb.Endpoint' started with 'Elixir.DomoapiUserWeb.Endpoint':start_link([]) at undefined exit with reason {shutdown,{failed_to_start_child,{ranch_listener_sup,'Elixir.DomoapiUserWeb.Endpoint.HTTP'},{shutdown,{failed_to_start_child,ranch_acceptors_sup,{listen_error,'Elixir.DomoapiUserWeb.Endpoint.HTTP',eaddrinuse}}}}} in context start_error
+2019-11-18 23:47:06.323 [error] <0.1567.0> CRASH REPORT Process <0.1567.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:47:06.331 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1566.0>,1,<0.1567.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:47:07.334 [error] <0.1571.0> CRASH REPORT Process <0.1571.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:47:07.341 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1570.0>,1,<0.1571.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:47:07.918 [error] <0.1575.0> CRASH REPORT Process <0.1575.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:47:07.927 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1574.0>,1,<0.1575.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:50:19.582 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 23:50:19.592 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 23:50:19.598 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 23:50:19.609 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 23:50:19.613 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 23:50:19.613 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 23:50:19.624 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 23:50:19.624 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 23:50:19.631 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 23:50:19.636 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 23:50:19.640 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 23:50:19.646 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 23:50:19.659 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 23:50:19.661 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 23:50:19.662 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 23:50:19.663 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 23:50:19.666 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 23:50:20.000 [warning] <0.453.0> lager_error_logger_h dropped 618 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:50:20.013 [error] <0.1184.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1184.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 23:50:20.022 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 23:50:21.000 [warning] <0.453.0> lager_error_logger_h dropped 75 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:50:42.210 [error] <0.1357.0> CRASH REPORT Process <0.1357.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:50:42.247 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1356.0>,1,<0.1357.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:50:42.847 [error] <0.1361.0> CRASH REPORT Process <0.1361.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:50:42.855 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1360.0>,1,<0.1361.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:50:43.470 [error] <0.1365.0> CRASH REPORT Process <0.1365.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:50:43.480 [error] <0.455.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1364.0>,1,<0.1365.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:57:24.708 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 23:57:24.717 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 23:57:24.723 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 23:57:24.733 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 23:57:24.737 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 23:57:24.737 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 23:57:24.748 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 23:57:24.748 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 23:57:24.755 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 23:57:24.760 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 23:57:24.762 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 23:57:24.769 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 23:57:24.783 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 23:57:24.785 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 23:57:24.786 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 23:57:24.788 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 23:57:24.791 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 23:57:25.000 [warning] <0.458.0> lager_error_logger_h dropped 597 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:57:25.049 [info] <0.43.0> Application archive started on node nonode@nohost
+2019-11-18 23:57:25.064 [info] <0.43.0> Application ex_json_schema started on node nonode@nohost
+2019-11-18 23:57:25.083 [info] <0.43.0> Application hpack started on node nonode@nohost
+2019-11-18 23:57:25.090 [info] <0.43.0> Application kadabra started on node nonode@nohost
+2019-11-18 23:57:25.099 [info] <0.43.0> Application uuid started on node nonode@nohost
+2019-11-18 23:57:25.114 [info] <0.43.0> Application poison started on node nonode@nohost
+2019-11-18 23:57:25.118 [info] <0.43.0> Application joken started on node nonode@nohost
+2019-11-18 23:57:25.134 [error] <0.1188.0>@Elixir.Archive.VideoVisor:create_dir:59 CRASH REPORT Process <0.1188.0> with 0 neighbours crashed with reason: bad argument in 'Elixir.Archive.VideoVisor':create_dir/2 line 59
+2019-11-18 23:57:25.148 [info] <0.43.0> Application pigeon started on node nonode@nohost
+2019-11-18 23:57:25.999 [warning] <0.458.0> lager_error_logger_h dropped 96 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-18 23:57:46.666 [error] <0.1362.0> CRASH REPORT Process <0.1362.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:57:46.702 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1361.0>,1,<0.1362.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:57:47.205 [error] <0.1366.0> CRASH REPORT Process <0.1366.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:57:47.214 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1365.0>,1,<0.1366.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:57:47.780 [error] <0.1370.0> CRASH REPORT Process <0.1370.0> with 0 neighbours exited with reason: {{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => 'Elixir.Domoapi.People.Tenant',apartment => #{'__cardinality__' => one,'__field__' => ...,...},...},...],...],...},...]},...} in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42 in 'Elixir.Phoenix.Endpoint.Cowboy2Handler':init/2 line 42
+2019-11-18 23:57:47.788 [error] <0.460.0> Lager event handler error_logger_lager_h exited with reason {'EXIT',{{case_clause,['Elixir.SignallingWeb.Endpoint.HTTP',<0.1369.0>,1,<0.1370.0>,{{#{'__exception__' => true,'__struct__' => 'Elixir.FunctionClauseError',args => nil,arity => 2,clauses => nil,function => sdp_call,kind => nil,module => 'Elixir.Signalling.Notifier'},[{'Elixir.Signalling.Notifier',sdp_call,[[#{'__meta__' => #{'__struct__' => 'Elixir.Ecto.Schema.Metadata',context => nil,prefix => nil,schema => 'Elixir.Domoapi.People.Tenant',source => <<"tenants">>,state => loaded},'__struct__' => ...,...},...],...],...},...]},...},...]},...}}
+2019-11-18 23:59:58.062 [info] <0.43.0> Application lager started on node nonode@nohost
+2019-11-18 23:59:58.072 [info] <0.43.0> Application xmerl started on node nonode@nohost
+2019-11-18 23:59:58.080 [info] <0.43.0> Application jsx started on node nonode@nohost
+2019-11-18 23:59:58.091 [info] <0.43.0> Application ranch started on node nonode@nohost
+2019-11-18 23:59:58.096 [info] <0.43.0> Application recon started on node nonode@nohost
+2019-11-18 23:59:58.096 [info] <0.43.0> Application rabbit_common started on node nonode@nohost
+2019-11-18 23:59:58.107 [info] <0.43.0> Application amqp_client started on node nonode@nohost
+2019-11-18 23:59:58.107 [info] <0.43.0> Application amqp started on node nonode@nohost
+2019-11-18 23:59:58.115 [info] <0.43.0> Application cowlib started on node nonode@nohost
+2019-11-18 23:59:58.120 [info] <0.43.0> Application cowboy started on node nonode@nohost
+2019-11-18 23:59:58.122 [info] <0.43.0> Application plug_cowboy started on node nonode@nohost
+2019-11-18 23:59:58.128 [info] <0.43.0> Application file_system started on node nonode@nohost
+2019-11-18 23:59:58.141 [info] <0.43.0> Application phoenix_live_reload started on node nonode@nohost
+2019-11-18 23:59:58.143 [info] <0.43.0> Application phoenix_swagger started on node nonode@nohost
+2019-11-18 23:59:58.145 [info] <0.43.0> Application phoenix_html started on node nonode@nohost
+2019-11-18 23:59:58.146 [info] <0.43.0> Application corsica started on node nonode@nohost
+2019-11-18 23:59:58.149 [info] <0.43.0> Application phoenix_ecto started on node nonode@nohost
+2019-11-18 23:59:59.000 [warning] <0.453.0> lager_error_logger_h dropped 742 messages in the last second that exceeded the limit of 50 messages/sec
+2019-11-19 00:00:00.005 [error] <0.1311.0> ** Task <0.1311.0> terminating
+** Started from <0.1310.0>
+** When function  == #Fun<Elixir.Quantum.Executor.7.12665260>
+**      arguments == []
+** Reason for termination == 
+** {function_clause,[{'Elixir.IO',chardata_to_string,[nil],[{file,"lib/io.ex"},{line,557}]},{'Elixir.File',ls,1,[{file,"lib/file.ex"},{line,1556}]},{'Elixir.Archive.CheckFile',check_dir,0,[{file,"lib/archive/check_file.ex"},{line,8}]},{'Elixir.Quantum.Executor','-run/4-fun-3-',3,[{file,"lib/quantum/executor.ex"},{line,141}]},{'Elixir.Task.Supervised',invoke_mfa,2,[{file,"lib/task/supervised.ex"},{line,90}]},{'Elixir.Task.Supervised',reply,5,[{file,"lib/task/supervised.ex"},{line,35}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+2019-11-19 00:00:00.028 [error] <0.1311.0>@Elixir.IO:chardata_to_string:557 CRASH REPORT Process <0.1311.0> with 0 neighbours crashed with reason: no function clause matching 'Elixir.IO':chardata_to_string(nil) line 557
+2019-11-19 00:00:00.029 [error] <0.1158.0>@Elixir.IO:chardata_to_string:557 Supervisor 'Elixir.Archive.Scheduler.Task.Supervisor' had child undefined started with {'Elixir.Task.Supervised',start_link,undefined} at <0.1311.0> exit with reason no function clause matching 'Elixir.IO':chardata_to_string(nil) line 557 in context child_terminated
